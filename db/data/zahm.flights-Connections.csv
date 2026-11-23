@@ -1,0 +1,5 @@
+ConnectionID;Airline_AirlineID;DepartureCity;ArrivalCity
+0400;LH;Frankfurt;New York
+0401;LH;München;London
+1100;BA;London;Frankfurt
+2200;AA;New York;Chicago
