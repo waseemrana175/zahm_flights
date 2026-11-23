@@ -42,10 +42,10 @@ annotate service.Airlines with @(
             Value: Name,
         },
         {
-           $Type : 'UI.DataField',
-           Label : 'Verbindungen',
-           Value : AnzahlVerbindungen,
-       },
+            $Type : 'UI.DataField',
+            Label : 'Verbindungen',
+            Value : AnzahlVerbindungen,
+        },
     ],
     UI.SelectionFields           : [
         Name,
@@ -70,3 +70,9 @@ annotate service.Connections with @(UI.LineItem: [
         Value: ArrivalCity
     },
 ], );
+
+annotate service.Airlines with @(
+    Capabilities.InsertRestrictions: {Insertable: true},
+    Capabilities.UpdateRestrictions: {Updatable: true},
+    Capabilities.DeleteRestrictions: {Deletable: true},
+);

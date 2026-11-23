@@ -1,6 +1,7 @@
 using zahm.flights from '../db/schema';
 
 service FlightService {
+    @odata.draft.enabled
     entity Airlines    as projection on flights.Airlines{
     *,
     (
